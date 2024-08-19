@@ -20,18 +20,23 @@ if (markHigherBMI) {
 }
 //#3
 const Dolphins_score=[96,108,89];
-const Koalas_score=[88,91,110];
+const Koalas_score=[96,100,89];
 const sum_Dolphins=Dolphins_score.reduce((a,b)=>a+b);
 const average_Dolphins=(sum_Dolphins/Dolphins_score.length);
 const sum_Koalas=Koalas_score.reduce((a,b)=>a+b);
 const average_Koalas=(sum_Koalas/Koalas_score.length);
-let result=average_Dolphins>average_Koalas;
-if(result)
+if(average_Dolphins>average_Koalas)
 {
     console.log('Dolphin win');
 }
 else{
-    if
+    if(average_Koalas>average_Dolphins)
+    {
+        console.log("Koalas win");
+    }
+    else{
+        console.log("Hoa");
+    }
 }
 
 
